@@ -1,13 +1,21 @@
 # xfgo
+## 请捐赠支持我继续开发
+![](https://github.com/heqyoufree/ModifyFGO_AnyProxy/blob/master/%E8%B5%9E%E5%8A%A9%E9%83%BD%E7%BB%99%E6%88%91%E8%B5%9E%E5%8A%A9.jpg?raw=true)  
+## 建议&Bugs
+[欢迎加入QQ群讨论](https://jq.qq.com/?_wv=1027&k=56u6QM2)  
+## 食用教程
+[教程](https://heqyoufree.github.io/)
+
+## 原RAEDME
 Fate/Grand Order b服过sign检测xposed模块
 
 当前游戏客户端版本: 1.21.2
 
 如有任何问题请提交issue，我会及时进行回复。
 
-核心代码 [Main.java](https://github.com/locbytes/xfgo/blob/master/app/src/main/java/com/locbytes/xfgo/Main.java)
+核心代码 [Main.java](https://github.com/heqyoufree/xfgo_modify/blob/master/app/src/main/java/com/modify/xfgo/Main.java)
 
-## 说明
+### 说明
 
 **本模块工作原理为修改验证函数返回值或传入参数，开启本模块后则必须使用科技，否则报201。**
 
@@ -29,11 +37,11 @@ v1.1版：[https://github.com/locbytes/xfgo/releases/tag/v1.1](https://github.co
 
 **不使用撤退胜利功能的用户请使用v1.1版，使用新版会造成撤退时报错误201，想要使用撤退胜利功能的用户请等待自己科技的作者适配完成。**
 
-## 使用方法
+### 使用方法
 
 用户需安装并应用此模块。
 
-### 修改战斗数据
+#### 修改战斗数据
 
 科技作者需在科技服务端将`response`的`sign`改为`""`。
 
@@ -45,7 +53,7 @@ v1.1版：[https://github.com/locbytes/xfgo/releases/tag/v1.1](https://github.co
 }
 ```
 
-### 撤退胜利
+#### 撤退胜利
 
 科技作者需在科技服务端对request进行修改，修改方法，具体示例代码请先参考模块中的代码。
 
@@ -65,10 +73,14 @@ v1.1版：[https://github.com/locbytes/xfgo/releases/tag/v1.1](https://github.co
 
 重新建立`requestData`，无需对sign进行处理。
 
-## 科技服务端代码参考
+#### 科技服务端代码参考
 
 暂未添加撤退胜利的相关示例代码
 
 AnyProxy版: [https://github.com/locbytes/FGO_AnyProxy](https://github.com/locbytes/FGO_AnyProxy)
+**失效**
 
 Fiddler版: [https://github.com/locbytes/FGO_FiddlerScript](https://github.com/locbytes/FGO_FiddlerScript)
+**失效**
+
+Modify版: [https://github.com/heqyoufree/ModifyFGO_Anyproxy](https://github.com/heqyoufree/ModifyFGO_Anyproxy)
